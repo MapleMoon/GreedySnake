@@ -123,7 +123,7 @@ gameCtrlBt.onkeypress = function(e){
  * 定义游戏引擎函数
  */
 function gameRun(){
-	setLevel_Score()
+	setLevel_Score();
 	setgameInterval();
 	snake.changeDirection(dirFlag);
 	if(snake.moving() == "gameOver"){
@@ -132,6 +132,7 @@ function gameRun(){
 		alert("gameOver");
 		gameReset.onclick();
 		gameCtrlBt.innerText = "开始游戏"
+		return;
 	}
 	timer = setTimeout(gameRun,gameInterval);
 }
@@ -168,7 +169,6 @@ gameReset.onclick = function (){
 	level.innerText = 1;
 	score = 0;
 	scoreBox.innerText = "得分：" + score;
-	gameInterval = 30;
 	snake.initialize();
 }
 
@@ -182,6 +182,7 @@ function setgameInterval(){
 	}else{
 		gameInterval = 100 - (speed-3)*10;
 	}
+	console.log(gameInterval);
 }
 
 /**

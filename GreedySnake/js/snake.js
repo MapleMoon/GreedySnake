@@ -29,7 +29,7 @@ function Snake(){
 		//初始化蛇身数组，蛇身的颜色是白色
 		me.sBody[0] = coordinateArray[0][0];
 		//初始化蛇身的颜色是白色
-		me.sBody[0].style.backgroundColor = "white";
+		me.sBody[0].style.backgroundColor = "greenyellow";
 		//初始化蛇身的被占用状态
 		me.sBody[0].flag = "white";
 		//定义当前蛇头所处的坐标对象,并初始化为0
@@ -40,7 +40,7 @@ function Snake(){
 	this.addEle = function(target){
 		var me = this;
 		me.sBody.unshift(target);
-		target.style.backgroundColor = "white";
+		target.style.backgroundColor = "greenyellow";
 		target.flag = "white";
 	}
 	//定义在蛇尾删除元素的方式
