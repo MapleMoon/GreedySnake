@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>贪吃蛇</title>
+		<!--引入css文件-->
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<!--引入蛇类JS文件-->
+		<script defer="defer" src="js/snake.js" type="text/javascript" charset="utf-8"></script>
+		<!--引入果实类JS文件-->
+		<script src="js/fruit.js" type="text/javascript" charset="utf-8"></script>
+		<!--引入游戏JS文件-->
+		<script defer="defer" src="js/game.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+	<body>
+		<div id="gameBox">
+			<div id="box"></div>
+			<div id="gameMessage">
+				<span id="score">得分：0</span>
+				<div id="levelBox">
+					<span>游戏难度</span>
+					<!--<button>-</button>-->
+					<span id="level">1</span>
+					<!--<button>+</button>-->
+				</div>
+				<div id="buttonBox">
+					<button id="gameCtrl">开始游戏</button>
+					<button id="gameReset">重新开始</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
