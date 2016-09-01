@@ -168,6 +168,7 @@ gameReset.onclick = function (){
 	level.innerText = 1;
 	score = 0;
 	scoreBox.innerText = "得分：" + score;
+	gameInterval = 30;
 	snake.initialize();
 }
 
